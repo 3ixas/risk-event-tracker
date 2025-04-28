@@ -1,6 +1,4 @@
 using RiskEventTracker.API.Models;
-using System;
-using System.Collections.Generic;
 
 namespace RiskEventTracker.API.Repositories
 {

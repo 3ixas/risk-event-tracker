@@ -1,4 +1,4 @@
-using System;
+
 
 namespace RiskEventTracker.API.Models
 {
