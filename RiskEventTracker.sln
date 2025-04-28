@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiskEventTracker.API", "RiskEventTracker.API\RiskEventTracker.API.csproj", "{B92C7E03-7C1D-4508-8A2C-12F39A67AB17}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiskEventTracker.Tests", "RiskEventTracker.Tests\RiskEventTracker.Tests.csproj", "{D1630A8A-4A2A-423C-B4F1-D8611C9DBBD4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{B92C7E03-7C1D-4508-8A2C-12F39A67AB17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B92C7E03-7C1D-4508-8A2C-12F39A67AB17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B92C7E03-7C1D-4508-8A2C-12F39A67AB17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1630A8A-4A2A-423C-B4F1-D8611C9DBBD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1630A8A-4A2A-423C-B4F1-D8611C9DBBD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1630A8A-4A2A-423C-B4F1-D8611C9DBBD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1630A8A-4A2A-423C-B4F1-D8611C9DBBD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
