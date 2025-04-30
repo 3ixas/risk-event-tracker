@@ -15,6 +15,9 @@ namespace RiskEventTracker.API.Controllers
             _repository = repository;
         }
 
+        /// <summary>
+        /// Get all risk events.
+        /// </summary>
         [HttpGet]
         public ActionResult<IEnumerable<RiskEvent>> GetAll()
         {
@@ -22,6 +25,9 @@ namespace RiskEventTracker.API.Controllers
             return Ok(events);
         }
 
+        /// <summary>
+        /// Get a risk event by its ID.
+        /// </summary>
         [HttpGet("{id}")]
         public ActionResult<RiskEvent> GetById(Guid id)
         {
@@ -33,6 +39,9 @@ namespace RiskEventTracker.API.Controllers
             return Ok(riskEvent);
         }
 
+        /// <summary>
+        /// Create a new risk event.
+        /// </summary>
         [HttpPost]
         public ActionResult<RiskEvent> Create(RiskEvent riskEvent)
         {
@@ -40,6 +49,9 @@ namespace RiskEventTracker.API.Controllers
             return CreatedAtAction(nameof(GetById), new { id = riskEvent.Id }, riskEvent);
         }
 
+        /// <summary>
+        /// Update an existing risk event.
+        /// </summary>
         [HttpPut("{id}")]
         public IActionResult Update(Guid id, RiskEvent updatedRiskEvent)
         {
@@ -54,6 +66,9 @@ namespace RiskEventTracker.API.Controllers
             return NoContent();
         }
 
+        /// <summary>
+        /// Delete a risk event by ID.
+        /// </summary>
         [HttpDelete("{id}")]
         public IActionResult Delete(Guid id)
         {
