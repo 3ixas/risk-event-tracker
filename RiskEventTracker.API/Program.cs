@@ -14,7 +14,7 @@ builder.Services.AddSwaggerGen(c =>
     var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
     c.IncludeXmlComments(xmlPath);
 });
-builder.Services.AddSingleton<IRiskEventRepository, RiskEventRepository>();
+builder.Services.AddScoped<IRiskEventRepository, RiskEventRepository>();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite("Data Source=riskevents.db"));
 
