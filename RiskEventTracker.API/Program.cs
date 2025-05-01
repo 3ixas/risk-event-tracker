@@ -1,4 +1,6 @@
 using RiskEventTracker.API.Repositories;
+using RiskEventTracker.API.Data;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +15,8 @@ builder.Services.AddSwaggerGen(c =>
     c.IncludeXmlComments(xmlPath);
 });
 builder.Services.AddSingleton<IRiskEventRepository, RiskEventRepository>();
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlite("Data Source=riskevents.db"));
 
 var app = builder.Build();
 
