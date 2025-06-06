@@ -1,4 +1,4 @@
-# Risk Event Tracker API
+# Financial Risk Event Tracker API
 
 A clean, testable, enterprise-style RESTful API built with ASP.NET Core for tracking and managing operational, cyber, or market risk events.
 
